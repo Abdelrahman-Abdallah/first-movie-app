@@ -1,0 +1,91 @@
+<div class="movie-data">
+<div class="movie-header">
+  <div class="movie-background">
+    <img src="https://image.tmdb.org/t/p/original/{{moviedata.backdrop_path}}">
+  </div>
+  <div class="movie-content">
+    <div class="row">
+      <div class="container">
+        <div class="movie-poster col-md-4 col-sm-5 col-xs-12">
+          <img src="https://image.tmdb.org/t/p/w500/{{moviedata.poster_path}}">
+        </div>
+        <div class="movie-details col-md-8 col-sm-7 col-xs-12">
+
+          <div class="row movie-title">
+            <h3>{{moviedata.title}}</h3>
+          </div>
+          <div class="row movie-cat">
+            <span *ngFor="let cat of moviedata.genres">
+              {{cat.name}}
+            </span>
+          </div>
+          <div class="row release-date">
+            releasedate: {{moviedata.release_date}}
+          </div>
+          <div class="row movie-rating">
+                Rating : <i class="fa fa-star" aria-hidden="true" *ngFor="let star of makerate(moviedata.vote_average)"></i>
+          </div>
+          <div class="row movie-overview">
+            <p>{{moviedata.overview}}</p>
+          </div>
+
+
+          <!--<div class="row movie-title"><h3>{{moviedata.title}}</h3>
+
+          </div>
+          <div class="row release-date">
+            <div class="icon">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+            <h3>{{moviedata.release_date}}</h3>
+
+          </div>
+          <div class="row movie-genre">
+                                <span *ngFor="let s of moviedata.genres">
+                                    {{s.name}} &nbsp; &nbsp;
+                                </span>
+          </div>
+
+          <div class="row overview">
+            <p>{{moviedata.overview}}</p>
+
+          </div>
+          <div class="row vote-average">
+            <div class="imdb">
+              <img src="https://png.icons8.com/imdb/color/96">
+            </div>
+            <h4>{{moviedata.vote_average}}</h4>
+            <div class="ratingstars">
+              &lt;!&ndash;<i class="fa fa-star" aria-hidden="true" ng-repeat=" i in makerate(movie.vote_average) track by $index" style="color: yellow;font-size: 30px;"></i>&ndash;&gt;
+            </div>
+          </div>
+          <div class="row movie-time">
+            <div class="icon">
+              <img src="https://png.icons8.com/time/dusk/64">
+            </div>
+            <h3>{{moviedata.runtime}} min</h3>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--<div class="movie-data">
+  <div class="movie-background">
+    <img src="https://image.tmdb.org/t/p/original/{{moviedata.backdrop_path}}">
+  </div>
+      <div class="container">
+        <div class="movie-content">
+            <div class="row">
+                <div class="movie-poster col-sm-5 col-xs-12">
+                  <img src="https://image.tmdb.org/t/p/w500/{{moviedata.poster_path}}">
+                </div>
+                <div class="movie-content col-sm-7 col-xs-12">
+                this is moviecontent
+                </div>
+            </div>
+        </div>
+      </div>
+</div>-->

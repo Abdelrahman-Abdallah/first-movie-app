@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="row">
+    <div class="movie-card-new col-md-3 col-sm-6 col-xs-12" *ngFor="let movie of response">
+      <div class="main-movie">
+        <div class="movie-img" [ngStyle]="{'background-image': getUrl(movie.poster_path)}">
+        </div>
+
+        <div class="movie-content">
+          <div class="appear-info">
+            <h3>{{movie.title}}</h3>
+            <div class="category">
+              <span>hororo</span>
+              <span>action</span>
+              <span>test</span>
+            </div>
+          </div>
+          <div class="hidden-info">
+            <p>{{movie.overview}}</p>
+            <a routerLink="/movie/{{movie.id}}"><h4>more info</h4></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

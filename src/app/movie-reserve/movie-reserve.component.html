@@ -1,0 +1,15 @@
+<app-movie-data [movieid]="movieid"></app-movie-data>
+
+<app-spinner *ngIf="showloader"></app-spinner>
+<div class="mainsection">
+  <div class="container">
+    <div class="row">
+      <div class="chairs col-sm-12  col-xs-12" >
+        <button appSeatClick *ngFor="let chair of arr;let i = index"  id="{{i}}" [disabled]="disablefun(i)" (click)="log(i)" [ngClass]="checkinarray(i)">{{i}}</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<button (click)="senddata()">click to reserve the movie</button>
+<button (click)="printdata()">print array</button>

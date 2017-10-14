@@ -1,0 +1,17 @@
+  .vidoes{
+    background-color: rgba(50,50,51,.7);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .movie-trailer {
+    height: 350px;
+    margin: 2px;
+    box-sizing: border-box;
+
+  }
+  .movie-trailer iframe {
+    border:none;
+    height: 100%;
+    padding: 5px;
+    border-radius: 20px;
+  }

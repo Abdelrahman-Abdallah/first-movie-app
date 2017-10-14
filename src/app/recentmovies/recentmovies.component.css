@@ -1,0 +1,111 @@
+.movie-card-new{
+  text-align: left;
+  height: 420px;
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  margin-bottom: 3px;
+  padding: 1px;
+
+}
+.movie-card-new .main-movie {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.movie-card-new .main-movie .movie-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://image.tmdb.org/t/p/w780/wJOHzjTDhnEUyP0Q8gyp6ggvL4A.jpg');
+  background-size: cover;
+  background-position: center center;
+  transition: all .3s ease;
+}
+.movie-card-new .main-movie  .movie-img:before{
+  background: -webkit-linear-gradient(to bottom,transparent 0%,#222222);
+  background: linear-gradient(to bottom,transparent 0%,#000000);
+  width: 100%;
+  height:40%;
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+.movie-card-new:hover .main-movie .movie-img{
+  transform:translateY(-45%);
+}
+.movie-card-new .main-movie .movie-content{
+  width: 100%;
+  position: absolute;
+  height: 70%;
+  bottom: -45%;
+  color:#333;
+  transition: all .3s ease;
+  text-align: center;
+}
+.movie-card-new:hover .main-movie .movie-content{
+  bottom: 3%;
+}
+.movie-card-new .main-movie .movie-content .appear-info {
+  height: 40%;
+  color: white;
+  background-color: rgba(51,51,51,.2);
+}
+.movie-card-new .main-movie .movie-content .appear-info h3 {
+  margin: 0;
+  padding: 5px;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 40%;
+}
+.movie-card-new .main-movie .movie-content .appear-info span{
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgba(51,51,51,.9);
+  margin: 1%;
+  border-radius: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.movie-card-new .main-movie .movie-content .appear-info span:hover {
+  background-color: rgba(255,255,255,.8);
+  color: #333;
+}
+.movie-card-new .main-movie .movie-content .hidden-info {
+  height: 60%;
+}
+.movie-card-new .main-movie .movie-content .hidden-info p {
+  width: 90%;
+  margin: auto;
+  height: 58%;
+  font-size: 17px;
+  text-transform: capitalize;
+  color: #333;
+  padding: 3px;
+  overflow: hidden;
+}
+.movie-card-new .main-movie .movie-content .hidden-info a {
+  height: 40%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  background-color: green;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+}
+.movie-card-new .main-movie .movie-content .hidden-info a h4 {
+  text-transform: capitalize;
+  padding:5%;
+  height: 100%;
+  font-size: 25px;
+
+}
